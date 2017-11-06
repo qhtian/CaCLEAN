@@ -27,7 +27,7 @@ function CleanObj=CICRcleanSimp(I,Bgr,Mask,xyt_dim,varargin)
     %% Input parameters.
     In=inputParser;
     In.addParameter('CaThresholdOverwrite',[], @(x) isempty(x) || (numel(x)==1 && x>0));
-    In.addParameter('CaCleanThreshold',3.5, @(x) numel(x)==1 && x>0);
+    In.addParameter('CaCleanThreshold',10, @(x) numel(x)==1 && x>0);
     In.addParameter('PSFAmplitude',[],@(x) isempty(x) || (numel(x)==1 && x>0)); % in photon.
     In.addParameter('ApparentDiffusionK',60,@(x) numel(x)==1 && x>0); % um^2/s.
     In.addParameter('CleanDiffusionK',   30,@(x) numel(x)==1 && x>0); % um^2/s.
