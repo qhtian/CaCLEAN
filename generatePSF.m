@@ -1,4 +1,17 @@
 function [PSF,CaDiffuse]=generatePSF(xyt_dim,ApparentDiffusionK)
+    %% [PSF,CaDiffuse]=generatePSF(xyt_dim,ApparentDiffusionK);
+    % Internal function to generate Analytical CLEAN Object (ACO). An ACO
+    % is similar to a Point Spread Function.
+    %
+    % [PSF,CaDiffuse]=generatePSF(xyt_dim,ApparentDiffusionK);
+    %
+    % Qinghai Tian
+    % Institute for Molecular Cellbiology
+    % Medical Facalty of University of
+    % Saarland.
+    % Homburg, Germany.
+    % tian_qhcn@icloud.com
+    
     CaDiffuse=@(t,D,x,y) exp(-(x.^2+y.^2)/(4*D*t));
     CaDiffuseSize=xyt_dim(1):xyt_dim(1):30;
     CaDiffuseSize=[sort(-CaDiffuseSize,'ascend'),0,CaDiffuseSize];
