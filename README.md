@@ -11,7 +11,9 @@ Function Lists and notes:
   6. SampleCell: SampleCell genarates a sample ventricular myocyte.
   7. sCMOSdynamicOffsetCorrection: sCMOSdynamicOffsetCorrection removes dynamic offset of sCMOS camera.
   
-  
+Demonstration of the CaCLEAN algorithm:
+  Demo_with_SampleData.m is a short demonstration script to run the CaCLEAN progam. Sample data is included the SampleData.mat file.
+
 Before the MatLab functions can be used, please be noted:
 
   1. CRUProps function needs fminsearchbnd function by John D'Errico (woodchips@rochester.rr.com). It is available in the File Exchange of MathWorks. Please download it and put it into current folder containing all the functions.
