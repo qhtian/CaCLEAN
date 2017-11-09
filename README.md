@@ -10,6 +10,7 @@ Function Lists and notes:
   5. generatePSF: Internal function to generate Analytical CLEAN Object (ACO). An ACO is similar to a Point Spread Function.
   6. SampleCell: SampleCell genarates a sample ventricular myocyte.
   7. sCMOSdynamicOffsetCorrection: sCMOSdynamicOffsetCorrection removes dynamic offset of sCMOS camera.
+  8. CICRcleanMultiCaTBatchSimp: the batch mode for the CaCLEAN, which reads the raw data into matlab, calculates the Ca2+ release maps and saves all the results automatically. This batch mode was customized to fit our workflow as described in the eLife paper. Because the source codes uses functions from other sources, and due to legal reasons this function will NOT be published here. Upon request, a stripped version can be provided.
   
 Demonstration of the CaCLEAN algorithm:
   Demo_with_SampleData.m is a short demonstration script to run the CaCLEAN progam. Sample data is included the SampleData.mat file.
@@ -30,7 +31,17 @@ Before the MatLab functions can be used, please be noted:
   
   5. Reading data, e.g. tiff files into MatLab, Loci Bio-Formats plugin for ImageJ and toolbox for MatLab (http://www.openmicroscopy.org/bio-formats/downloads/) were used. Please refer to the documentation for detailed information.
 
+
 Please refer to the original paper for detailed information:
 Tian Q, et. al., An adaptation of astronomical image processing enables characterization and functional 3D mapping of individual sites of excitation-contraction coupling in rat cardiac muscle, eLife, 2017, in press.
 
 
+Qinghai Tian (tian_qhcn@icloud.com)
+Center for Molecular Signaling (PZMS)
+Institute for Molecular Cell Biology
+Research Center for Molecular Imaging and Screening
+Building 61, Medical Faculty
+Saarland University Hospital
+Saarland University
+66421 Homburg/Saar, Germany
+www.pzms.uni-saarland.de   -or-   www.lipplab.de
